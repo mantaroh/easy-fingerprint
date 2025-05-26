@@ -1,0 +1,26 @@
+{
+  "name": "easy-fingerprint",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.19",
+    "prisma": "^6.8.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "~3.0.7",
+    "wrangler": "^4.16.1"
+  },
+  "dependencies": {
+    "@fingerprintjs/fingerprintjs": "^4.6.2",
+    "@prisma/adapter-d1": "^6.8.2",
+    "@prisma/client": "^6.8.2",
+    "read-tls-client-hello": "^1.1.0"
+  }
+}

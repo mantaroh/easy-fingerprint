@@ -1,0 +1,25 @@
+{
+  "name": "easy-fingerprint",
+  "main": "src/worker.ts",
+  "compatibility_date": "2025-05-25",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+
+  // D1 をバインド
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "easy-fingerprint",
+      "database_id": "bf1c37be-8b82-48f0-bb02-390c902a9034"
+    }
+  ],
+
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS"
+  }
+}

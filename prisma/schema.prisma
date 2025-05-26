@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model DeviceFingerprint {
+  compositeId String  @id
+  fpId        String
+  ip          String
+  ua          String
+  lang        String
+  tz          String
+  firstSeen   DateTime @default(now())
+  lastSeen    DateTime @updatedAt
+}
